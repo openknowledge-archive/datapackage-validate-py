@@ -51,7 +51,7 @@ def validate(datapackage, schema='base'):
             datapackage_obj = json.loads(datapackage)
         except ValueError as e:
             errors.append(exceptions.DataPackageValidateException(e))
-    elif not (isinstance(datapackage, dict) or isinstance(datapackage, list)):
+    elif not isinstance(datapackage, dict):
         msg = 'Data Package must be a dict or JSON string, but was a \'{0}\''
         dp_type = type(datapackage).__name__
         error = exceptions.DataPackageValidateException(msg.format(dp_type))
