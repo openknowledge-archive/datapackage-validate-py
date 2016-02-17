@@ -17,7 +17,8 @@ with io.open('README.md') as readme:
 dependencies = [
     'requests>=2.8.0',
     'jsonschema>=2.5.1',
-    'datapackage-registry>=0.3.0'
+    'datapackage-registry>=0.3.0',
+    'click'
 ]
 
 setup(
@@ -46,4 +47,9 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities',
     ],
+    entry_points={
+        "console_scripts": [
+           "validate-dpkg=datapackage_validate.cli_datapackage_validate:main",
+        ],
+    },
 )
