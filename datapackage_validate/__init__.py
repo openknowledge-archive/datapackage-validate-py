@@ -6,6 +6,12 @@ from __future__ import unicode_literals
 
 from .schema import Schema
 from .validate import validate
+import warnings
 
+warnings.warn(
+    'The "datapackage-validate" package is deprecated. Please use '
+    '"datapackage" instead',
+    DeprecationWarning
+)
 
 __all__ = ['validate']

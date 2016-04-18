@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/okfn/datapackage-validate-py.svg)](https://travis-ci.org/okfn/datapackage-validate-py) [![Coverage Status](https://coveralls.io/repos/okfn/datapackage-validate-py/badge.svg?branch=master&service=github)](https://coveralls.io/github/okfn/datapackage-validate-py?branch=master)
+**This project is DEPRECATED. You should use
+<https://github.com/datapackages/datapackage-py> instead. This repository is
+just for historical purposes.**
 
 # datapackage-validate-py
 

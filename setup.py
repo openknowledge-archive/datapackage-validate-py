@@ -8,7 +8,10 @@ import io
 
 from setuptools import setup, find_packages
 
-description = "A Python library to validate Data Package datapackage.json files."
+description = (
+    '(DEPRECATED) A Python library to validate Data Package datapackage.json'
+    ' files.'
+)
 with io.open('README.md') as readme:
     long_description = ''.join(
         filter(lambda x: 'https://travis-ci.org/' not in x,
@@ -22,7 +25,7 @@ dependencies = [
 
 setup(
     name='datapackage-validate',
-    version='0.3.1',
+    version='0.4.0',
     url='https://github.com/okfn/datapackage-validate-py',
     license='MIT',
     description=description,
@@ -33,7 +36,7 @@ setup(
     package_dir={'datapackage_validate': 'datapackage_validate'},
     install_requires=dependencies,
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 7 - Inactive',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
